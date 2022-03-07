@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    font-family: 'Courgette', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 800vh;
+    margin: -10px;
+}
+
+
+.bookshelf {
+    display: flex;
+    align-content: flex-start;
+    background-color: bisque;
+    width: 800px;
+    height: 800vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card{
+    background-color: white;
+    width: 340px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+
+
+
+.title, .author, .pages, .genre, .read {
+    text-align: center;
+    display: block;
+}
+
+ 
+.add {
+    position: fixed;
+    bottom: 10px;
+    right: calc(50% - 400px);
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    font-size: 32px;
+    background-color: rgb(22, 252, 22);
+
+}
+
+
+.remove {
+    position: absolute;
+    right: 10px;
+    top: 170px;
+    color: red;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.form {
+    position: fixed;
+    left: calc(50% - 300px);
+    z-index: 1;
+    top: 20%;
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    border: 3px solid rgb(124, 212, 131);
+    border-radius: 20%;
+
+    padding: 50px;
+
+}
+
+
+form {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+   
+    gap: 10px;
+    column-gap: 25px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 40px;
+    grid-column: 1;
+}
+
+input, select {
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+.rvwbox {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: span 7;
+    position: relative;
+}
+
+.rvw { 
+    text-align: center;
+}
+
+textarea {
+    height: 350px;
+    width: 250px;
+    position: relative;
+    top: -30px;
+}
+
+.form p {
+    height: 10px;
+    margin: 0px;
+    position: relative;
+    top: -30px;
+    text-align: center;
+    
+}
+
+
+.form .fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: red;
+}
